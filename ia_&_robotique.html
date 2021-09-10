@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA & robotique</title>
+    <link rel="stylesheet" href="i&r.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <!-- HEADER -->
+        <header>
+            <img src="../img/IA & robotique.jpeg" alt="">
+            <div class="titre">
+                <h1 class="grdTitre">IA <span class="et">&</span> robotique</h1>
+            </div>
+            <div class="menu">
+                <nav class="flex">
+                    <a href="accueil.html">ACCUEIL</a>
+                    <a href="refroidissement_ecologiques.html">REFROIDISSEMENT ECOLOGIQUES</a>
+                    <a href="green_data_centers.html">GREEN DATA CENTERS</a>
+                    <a href="ia_&_robotique.html">IA & ROBOTIQUE</a>
+                    <a href="designs_ecologiques.html">DESIGNS ECOLOGIQUES</a>
+                </nav>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- CONTENU -->
+
+        <!-- PARTIE 1 -->
+        <section id="partie1" class="flex">
+            <div>
+                <iframe width="630" height="420" src="https://www.youtube.com/embed/voOK-1DLr00" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="deepmind">
+                <h1 class="titre1">En 2016, Google et DeepMind annonçaient une collaboration pour augmenter l’efficience énergétique des Data Centers de Google grâce à l’IA.</h1>
+                <p>Deux ans plus tard, au mois d’août 2018, Google annonce qu’une nouvelle intelligence artificielle développée par DeepMind se chargera de contrôler le refroidissement des serveurs au sein de ses Data Centers.</p>
+            </div>
+        </section>
+
+        <!-- PARTIE 2 -->
+        <section id="partie2" class="flex">
+            <div class="texte2">
+                <p class="mountain">Selon la firme de Mountain View, il s’agit d’un <b>“système de contrôle basé sur le Cloud”</b> encore inédit à ce jour. Toutes les cinq minutes, des milliers de capteurs disséminés dans le Data Center transmet des informations vers le Cloud.</p>
+                <p>A partir de ces données, les réseaux de neurones artificiels vont se mettre en branle pour prédire comment différentes combinaisons d’actions potentielles affecteront la consommation d’énergie du Data Center. L’IA va alors identifier quelles actions permettront de minimiser la consommation d’énergie tout en respectant les contraintes de sécurité.</p>
+            </div>
+            <div>
+                <img src="../img/Google.jpg" alt="" class="part2">
+            </div>
+        </section>
+
+        <!-- PARTIE 3 -->
+        <section id="partie3">
+            <p class="padding">Ces actions sont à nouveau transmises au Data Center, vérifiées par le système de contrôle local, puis implémentées. Précisons que les opérateurs humains peuvent reprendre le contrôle à tout moment en quittant le mode IA.</p>
+            <center><img src="../img/Graphique Google.png" alt="" class="graph"></center>
+            <p class="padding">En observant le graphique retraçant les performances de cette IA au fil du temps, on constate une importante amélioration. Au départ, lors du lancement de ce système de contrôle autonome, <b>l’IA a permis d’augmenter l’efficience du refroidissement à hauteur de 12%.</b> Après neuf mois, l’efficience est en hausse d’environ 30%.
+            </p>
+            <p>L’intelligence artificielle a notamment compris qu’il est préférable de répartir le refroidissement entre le plus grand nombre possible d’équipements, et a aussi appris a prendre avantage des conditions hivernales pour produire de l’eau plus froide et réduire l’énergie nécessaire au refroidissement. Pour l’heure, l’IA ne contrôle qu’un nombre limité de facteurs. Par la suite, Google envisage de lui laisser davantage de responsabilités pour augmenter encore les économies d’énergie.</p>
+        </section>
+    </main>
+    
+    <!-- SCRIPT -->
+    <script src="api.js"></script>
+</body>
+</html>

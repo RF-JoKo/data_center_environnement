@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px;
+}
+
+img {
+    object-fit: cover;
+}
+
+h1 {
+    position: absolute;
+    z-index: 0;
+}
+
+h1,
+a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.onglets {
+    gap: 10px;
+}
+
+.carte {
+    flex-direction: column;
+}
+
+/* MENU BURGER */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    padding: 20px;
+    justify-content: space-between!important;
+  }
+  
+  .burger {
+    cursor: pointer;
+  }
+  
+  .burger span {
+    display: block;
+    height: 5px;
+    width: 40px;
+    background: #000;
+    transition: .3s;
+  }
+  
+  .burger span:nth-child(2) {
+    margin: 6px 0;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burger-reveal span:nth-child(2){
+    opacity: 0;
+    margin: 0;
+  }
+
+  .burger-reveal span:first-child{
+    transform: rotate(45deg) translate(0, 5px);
+  }
+
+  .burger-reveal span:last-child{
+    transform: rotate(-45deg) translate(0, -10px);
+  }
+
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100vh;
+    background: #6F6F6F;
+    flex-direction: column;
+    gap: 50px;
+    transform: translateX(-105%);
+    transition: .5s;
+    padding: 75px 0;
+  }
+
+  nav a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: lighter;
+  }
+
+  .nav-reveal {
+    transform: translateX(0);
+  }
+
+  @media (max-width:800px){
+    nav {
+      width: 35%;
+    }
+    
+    nav a {
+      font-size: 24px;
+    }
+
+    .onglets {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-areas: "o1 o2" "o3 o4";
+    grid-gap: 10px;
+    }
+
+    .onglets img {
+      height: 450px;
+    }
+  }
+
+  @media (max-width:400px){
+    nav {
+      width: 35%;
+    }
+    
+    nav a {
+      font-size: 12px;
+    }
+    
+    .onglets {grid-template-columns: repeat(1,auto);
+    grid-template-areas:"o1" "o2" "o3" "o4";
+    grid-gap: 10px;
+  }
+  }
